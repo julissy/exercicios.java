@@ -37,14 +37,8 @@ class exercProposto01 {
                     if (maiorMes.getTemperatura() > mediaTemp) meses.add(maiorMes.getNome());
                 }
                 System.out.println("Os meses que tiveram temperaturas acima da média são: " + meses);
-
-
-
-
-
+                
             }
-
-
 }
 
 class Mes {
