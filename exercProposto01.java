@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-class exercProposto01 {
+class ExercProposto01 {
             public static void main(String[] args) {
 
                 List<Mes> semestral = new ArrayList<>(){{
@@ -37,7 +37,7 @@ class exercProposto01 {
                     if (maiorMes.getTemperatura() > mediaTemp) meses.add(maiorMes.getNome());
                 }
                 System.out.println("Os meses que tiveram temperaturas acima da média são: " + meses);
-                
+
             }
 }
 
