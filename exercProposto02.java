@@ -10,7 +10,7 @@ Se a pessoa responder positivamente a 2 questões ela deve ser classificada como
 
 import java.util.*;
 
-public class exercProposto02 {
+public class ExercProposto02 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         List<String> perguntas = new ArrayList<>();
