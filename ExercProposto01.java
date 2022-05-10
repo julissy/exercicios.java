@@ -10,15 +10,15 @@ import java.util.List;
 class ExercProposto01 {
             public static void main(String[] args) {
 
-                List<Mes> semestral = new ArrayList<>(){{
-                    add(new Mes("Janeiro",25.5));
-                    add(new Mes("Fevereiro",26.4));
-                    add(new Mes("Março",27.3));
-                    add(new Mes("Abril",24.2));
-                    add(new Mes("Maio",25.3));
-                    add(new Mes("Junho",23.4));
-                }};
-
+                List<Mes> semestral = List.of(
+                        new Mes("Janeiro",25.5),
+                        new Mes("Fevereiro",26.4),
+                        new Mes("Março",27.3),
+                        new Mes("Abril",24.2),
+                        new Mes("Maio",25.3),
+                        new Mes("Junho",23.4)
+                );
+                
                 System.out.println(semestral);
                 Iterator<Mes> iterator = semestral.iterator();
                 Double tempTotal = 0d;
@@ -27,7 +27,7 @@ class ExercProposto01 {
                     tempTotal += mesAtual.getTemperatura();
                 }
                 Double mediaTemp = tempTotal/semestral.size();
-                System.out.println(String.format("A média das temperaturas do semestre é : %.2f graus",mediaTemp));
+                System.out.printf("A média das temperaturas do semestre é : %.2f graus%n",mediaTemp);
 
                 Iterator<Mes> iterator1 = semestral.iterator();
 
